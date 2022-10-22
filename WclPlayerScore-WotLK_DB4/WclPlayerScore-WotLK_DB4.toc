@@ -1,0 +1,19 @@
+## Interface: 20504
+## Title: WclPS-WotLK|cFF3782D1[五区数据包#2]|r
+## Author: 插件借鉴来源 WclPlayerScore-TBC
+## LoadOnDemand: 1
+## Dependencies: WclPlayerScore-WotLK
+
+top.lua
+5045.lua
+5049.lua
+5104.lua
+5106.lua
+5112.lua
+5115.lua
+5128.lua
+5129.lua
+5142.lua
+5144.lua
+5146.lua
+5170.lua
