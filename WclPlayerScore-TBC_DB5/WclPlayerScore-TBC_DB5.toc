@@ -1,0 +1,32 @@
+## Interface: 20504
+## Title: WclPS-TBC|cFF3782D1[小服及外服数据包]|r
+## Author: 插件作者：zwj@oldgun ，TBC数据提取：SaberNio，鸣谢：deepapa@NGA
+## LoadOnDemand: 1
+## Dependencies: WclPlayerScore-TBC
+
+5040.lua
+5105.lua
+5109.lua
+5110.lua
+5126.lua
+5127.lua
+5130.lua
+5132.lua
+5133.lua
+5137.lua
+5140.lua
+5148.lua
+5150.lua
+5152.lua
+5153.lua
+5154.lua
+5158.lua
+5162.lua
+5164.lua
+5165.lua
+5169.lua
+5173.lua
+5188.lua
+5189.lua
+5190.lua
+top.lua
