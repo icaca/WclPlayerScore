@@ -403,6 +403,17 @@ local function cut_strr(str)
 	return nil
 end
 
+local function cut_lastdate(str)
+	if str ~= nil then
+		local s1, s2 = strsplit("|", str);
+		if s2 ~= nil and s2 ~= "" then
+			return s2
+		end
+	else return nil
+	end
+	return nil
+end
+
 local function load_data(tname)
 	if type(WP_Database) ~= "table" then
 		return nil
@@ -880,22 +891,17 @@ partyraid_eventframe:SetScript("OnEvent",
 				if dstrstop3 == nil then dstrstop3 = "" end
 
 				local data = load_data(WP_MouseoverName)
-				local dstr, uptime, dstrupdate
+				local uptime = cut_lastdate(data)
 
-				if data then
-					data, uptime = strsplit("|", data, 2)
-					print(data,uptime)
+				if uptime ~=nil and uptime ~="" then
+					local y, m, d = strsplit("-", addonVersion, 3)
+					local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
+					cc = time(c)
+					cc = cc - tonumber(uptime) * 24 * 60 * 60
+					dstrupdate = "更新日期:" .. date("%Y-%m-%d", cc)
 				end
-				
-				local y, m, d = strsplit("-", addonVersion, 3)
-				print(addonVersion)
-				local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
-				cc = time(c)
-				cc = cc - tonumber(uptime) * 24 * 60 * 60
-
 				local dstr = cut_str(data)
 				if dstr == nil then dstr = "" else if dstr then dstr = strsub(dstr, 11) end end
-				local dstrupdate = "更新日期:" .. date("%Y-%m-%d", cc)
 				local dstrs2 = cut_strr(data)
 				if dstrs2 == nil then dstrs2 = "" else if dstrs2 then dstrs2 = strsub(dstrs2, 11) end end
 				SendChatMessage("欢迎" ..
