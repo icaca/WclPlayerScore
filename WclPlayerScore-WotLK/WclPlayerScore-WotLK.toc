@@ -1,0 +1,11 @@
+## Interface: 30400
+## Title: WclPlayerScore-WotLK
+## Version: 2022-10-28
+## Author: 插件作者：zwj@oldgun ，TBC数据提取：SaberNio，鸣谢：deepapa@NGA
+## SavedVariables: wclps_settings
+## DefaultState: enabled
+
+Libs\LibStub\LibStub.lua
+Libs\AceTimer-3.0\AceTimer-3.0.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+main.lua
