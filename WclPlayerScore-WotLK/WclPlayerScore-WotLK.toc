@@ -1,6 +1,6 @@
 ## Interface: 30400
 ## Title: WclPlayerScore-WotLK
-## Version: 2022-10-28
+## Version: @project-version@
 ## Author: 插件作者：zwj@oldgun ，TBC数据提取：SaberNio，WotLK数据提取：caca，鸣谢：deepapa@NGA
 ## SavedVariables: wclps_settings
 ## DefaultState: enabled
