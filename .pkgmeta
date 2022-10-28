@@ -1,8 +1,6 @@
 package-as: WclPlayerScore-WotLK
 
-manual-changelog:
-  filename: CHANGELOG.md
-  markup-type: markdown
+enable-nolib-creation: no
 
 ignore:
   - .github/*
