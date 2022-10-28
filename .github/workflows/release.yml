@@ -20,5 +20,5 @@ jobs:
       - name: Package and release
         uses: BigWigsMods/packager@master
         with:
-          args: -p {WclPlayerScore-WotLK}
+          args: -p {694611}
 
