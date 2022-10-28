@@ -1,41 +1,28 @@
-name: publish_development
+name: Package and release
 
 on:
   push:
     tags:
-      - "**-alpha-**"
-      - "**-beta-**"
+      - '[0-9]+-[0-9]+-[0-9]+'
 
 jobs:
-  build:
+
+  release:
+
     runs-on: ubuntu-latest
 
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
-      - name: Pull the latest version
-        uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
 
-      - name: Initialize Python envoriment
-        uses: actions/setup-python@v2
+      - name: Clone project
+        uses: actions/checkout@v2
         with:
-          python-version: 3.8
-      
-      - name: Install Python dependencies
-        run: pip install git+https://github.com/SirAnthony/slpp
-      
-      - name: Run scripts to generate changelogs
-        run: python generate_changelog.py
+          fetch-depth: 0
 
-      - name: Auto Packaging
+      - name: Package and release
         uses: BigWigsMods/packager@master
-        env:
-          CF_API_KEY: ${{ secrets.CF_API_KEY }}
-          GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload to Github Actions
-        uses: actions/upload-artifact@v2
         with:
-          name: ElvUI_WindTools
-          path: .release/*.zip
-
+          args: -w 0
