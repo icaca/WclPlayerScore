@@ -12,26 +12,26 @@ local function loadScoreDB()
 		"巴罗夫", "无尽风暴", "巨龙追猎者", "寒冰之王", "秩序之源" }
 
 	for k, v in ipairs(ScoreDB1) do
-		if v == GetRealmName() then LoadAddOn("WclPlayerScore-TBC_DB1")
+		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB1")
 		end
 	end
 	for k, v in ipairs(ScoreDB2) do
-		if v == GetRealmName() then LoadAddOn("WclPlayerScore-TBC_DB2")
+		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB2")
 		end
 	end
 	for k, v in ipairs(ScoreDB3) do
-		if v == GetRealmName() then LoadAddOn("WclPlayerScore-TBC_DB3")
+		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB3")
 		end
 	end
 	for k, v in ipairs(ScoreDB4) do
-		if v == GetRealmName() then LoadAddOn("WclPlayerScore-TBC_DB4")
+		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB4")
 		end
 	end
-	if not IsAddOnLoaded("WclPlayerScore-TBC_DB1") and
-		not IsAddOnLoaded("WclPlayerScore-TBC_DB2") and
-		not IsAddOnLoaded("WclPlayerScore-TBC_DB3") and
-		not IsAddOnLoaded("WclPlayerScore-TBC_DB4") then
-		LoadAddOn("WclPlayerScore-TBC_DB5")
+	if not IsAddOnLoaded("WclPlayerScore-WotLK_DB1") and
+		not IsAddOnLoaded("WclPlayerScore-WotLK_DB2") and
+		not IsAddOnLoaded("WclPlayerScore-WotLK_DB3") and
+		not IsAddOnLoaded("WclPlayerScore-WotLK_DB4") then
+		LoadAddOn("WclPlayerScore-WotLK_DB5")
 	end
 end
 
@@ -74,7 +74,7 @@ local function CreatPanel()
 
 	local introMessageHeader = configurationPanel:CreateFontString("introMessageHeader", "ARTWORK", "GameFontNormalLarge")
 	introMessageHeader:SetPoint("TOPLEFT", 10, -10)
-	introMessageHeader:SetText("WclPlayerScore-TBC")
+	introMessageHeader:SetText("WclPlayerScore-WotLK")
 
 	local introMessageBottom = configurationPanel:CreateFontString("introMessageBottom", "ARTWORK", "GameFontNormalLarge")
 	introMessageBottom:SetPoint("BOTTOMRIGHT", -10, 10)
@@ -298,7 +298,7 @@ end
 
 
 local _G = getfenv(0)
-local WclPlayerScore = _G.LibStub("AceAddon-3.0"):NewAddon("WclPlayerScore-TBC", "AceTimer-3.0")
+local WclPlayerScore = _G.LibStub("AceAddon-3.0"):NewAddon("WclPlayerScore-WotLK", "AceTimer-3.0")
 
 local function expand(name)
 
@@ -1090,7 +1090,7 @@ averagescoretext:SetText("WCL INFO")
 local Addon_EventFrame = CreateFrame("Frame")
 Addon_EventFrame:RegisterEvent("ADDON_LOADED")
 Addon_EventFrame:SetScript("OnEvent", function(self, event, addon)
-	if addon == "WclPlayerScore-TBC" then
+	if addon == "WclPlayerScore-WotLK" then
 		WP_Database = WP_Database or {}
 		WP_Database_1 = WP_Database_1 or {}
 		WP_Database_2 = WP_Database_2 or {}
