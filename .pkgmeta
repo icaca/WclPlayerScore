@@ -7,7 +7,7 @@ ignore:
   - README.md
 
 move-folders:
-  WclPlayerScore-WotLK/WclPlayerScore-WotLK: WclPlayerScore-WotLK  
+  WclPlayerScore-WotLK/WclPlayerScore-WotLK: WclPlayerScore-WotLK
   WclPlayerScore-WotLK/WclPlayerScore-WotLK_DB1: WclPlayerScore-WotLK_DB1
   WclPlayerScore-WotLK/WclPlayerScore-WotLK_DB2: WclPlayerScore-WotLK_DB2
   WclPlayerScore-WotLK/WclPlayerScore-WotLK_DB3: WclPlayerScore-WotLK_DB3
