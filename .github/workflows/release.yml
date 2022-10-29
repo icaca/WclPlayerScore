@@ -20,9 +20,9 @@ jobs:
       - name: Clone project
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 5
 
       - name: Package and release
         uses: BigWigsMods/packager@master
         with:
-          args: -w 0
+          args: -p 694611
