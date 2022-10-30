@@ -1,5 +1,6 @@
 if(GetRealmName() == "水晶之牙") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["Piggoodup"]="X:0/0.0%|1",
 ["Etcbaby"]="X:0/0.0%|1",
 ["贼狂野"]="X:0/0.0%|1",

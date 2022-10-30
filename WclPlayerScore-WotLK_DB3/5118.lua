@@ -1,5 +1,6 @@
 if(GetRealmName() == "觅心者") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["Libertango"]="X:1766/99.9%|1",
 ["牧影苍穹"]="X:1764/99.9%|2",
 ["流云桑"]="X:1735/99.9%|2",

@@ -1,5 +1,6 @@
 if(GetRealmName() == "灰烬使者") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["圣光幽兰"]="X:1682/99.9%|2",
 ["Battleax"]="X:1532/99.4%|2",
 ["Vefor"]="X:1887/99.9%|2",

@@ -1,5 +1,6 @@
 if(GetRealmName() == "狂野之刃") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["Seeyoulater"]="X:0/0.0%|1",
 ["绿毛毛"]="X:0/0.0%|1",
 ["云路仙居"]="X:1787/99.8%|3",

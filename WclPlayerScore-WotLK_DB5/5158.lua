@@ -1,5 +1,6 @@
 if(GetRealmName() == "无畏") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["黑锋骑士"]="X:1571/99.4%|2",
 ["July"]="X:879/68.0%|2",
 ["Saytu"]="X:1710/98.7%|2",

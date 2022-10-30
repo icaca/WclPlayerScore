@@ -1,5 +1,6 @@
 if(GetRealmName() == "辛迪加") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["Moona"]="X:1730/99.9%|2",
 ["降谷零"]="X:1856/99.8%|2",
 ["Darkdruids"]="X:1712/99.9%|2",

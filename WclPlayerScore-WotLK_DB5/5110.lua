@@ -1,5 +1,6 @@
 if(GetRealmName() == "骨火") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["狂之舞"]="X:1421/99.0%|2",
 ["Raillydr"]="X:1586/99.7%|2",
 ["书信为鸽"]="X:1646/99.8%|2",

@@ -1,5 +1,6 @@
 if(GetRealmName() == "奥罗") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["Qunbugman"]="X:1758/99.9%|2",
 ["花火知我愿"]="X:1773/99.9%|2",
 ["Darkartss"]="X:1760/99.9%|2",

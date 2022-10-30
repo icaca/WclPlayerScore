@@ -1,5 +1,6 @@
 if(GetRealmName() == "席瓦莱恩") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["斗鱼曲神"]="X:1765/99.9%|2",
 ["Cherbandit"]="X:1916/99.9%|2",
 ["张无忌丶丶"]="X:1698/99.9%|2",

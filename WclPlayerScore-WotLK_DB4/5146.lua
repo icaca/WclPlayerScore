@@ -1,5 +1,6 @@
 if(GetRealmName() == "秩序之源") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["胖胖骑丶"]="X:1702/99.9%|2",
 ["Airzz"]="X:1674/99.7%|2",
 ["Pui"]="X:1752/99.9%|2",

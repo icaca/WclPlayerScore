@@ -1,5 +1,6 @@
 if(GetRealmName() == "祈福") then
 WP_Database = {
+LASTUPDATE="2022-10-31",
 ["大菜市买秋裤"]="X:0/0.0%|1",
 ["北斗七个星"]="X:0/0.0%|1",
 ["Zimomo"]="X:0/0.0%|1",
