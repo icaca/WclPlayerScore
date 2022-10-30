@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: Klemensas/action-autotag@stable
       with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        # GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         package_root: "./"
         tag_prefix: "v"
         version: "${{ steps.previous_step.outputs.version }}"
