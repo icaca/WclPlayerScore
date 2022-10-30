@@ -842,7 +842,7 @@ function WclPlayerScore:InitCode()
 				GameTooltip:AddLine(dstrr, 255, 209, 0)
 			end
 			if uptime and wclps_settings.updatedate == true then
-				local y, m, d = strsplit("-", addonVersion, 3)
+				local y, m, d = strsplit("-", load_data("LASTUPDATE"), 3)
 				local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
 				cc = time(c)
 				cc = cc - tonumber(uptime) * 24 * 60 * 60
@@ -894,7 +894,7 @@ partyraid_eventframe:SetScript("OnEvent",
 				local uptime = cut_lastdate(data)
 
 				if uptime ~=nil and uptime ~="" then
-					local y, m, d = strsplit("-", addonVersion, 3)
+					local y, m, d = strsplit("-", load_data("LASTUPDATE"), 3)
 					local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
 					cc = time(c)
 					cc = cc - tonumber(uptime) * 24 * 60 * 60
