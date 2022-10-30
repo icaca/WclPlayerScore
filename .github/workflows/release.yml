@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 5
 
-      - name: Package and release
-        uses: BigWigsMods/packager@master
+      - name: WoW Packager
+        uses:  BigWigsMods/packager@v2.0.3
         with:
           args: -p 694611
