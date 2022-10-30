@@ -4,6 +4,7 @@
 ## Author: 插件作者：zwj@oldgun ，TBC数据提取：SaberNio，WotLK数据提取：caca，鸣谢：deepapa@NGA
 ## SavedVariables: wclps_settings
 ## DefaultState: enabled
+## Interface-Wrath: 30400
 
 Libs\LibStub\LibStub.lua
 Libs\AceTimer-3.0\AceTimer-3.0.xml
