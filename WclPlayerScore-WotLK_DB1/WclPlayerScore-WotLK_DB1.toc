@@ -4,15 +4,15 @@
 ## LoadOnDemand: 1
 ## Dependencies: WclPlayerScore-WotLK
 
-5043.lua
-5087.lua
-5107.lua
-5111.lua
-5113.lua
-5122.lua
-5134.lua
-5135.lua
-5143.lua
-5147.lua
-5155.lua
-5157.lua
+5039.lua
+5041.lua
+5042.lua
+5044.lua
+5114.lua
+5116.lua
+5117.lua
+5119.lua
+5136.lua
+5141.lua
+5145.lua
+5159.lua
