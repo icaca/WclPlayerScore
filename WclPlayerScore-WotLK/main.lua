@@ -418,8 +418,15 @@ local function load_data(tname)
 	if type(WP_Database) ~= "table" then
 		return nil
 	end
-	if WP_Database[tname] then
-		return expand(WP_Database[tname])
+	local info = WP_Database[tname]
+	if info then
+		local data, uptime = strsplit("|", info);
+		-- print(data,uptime)
+		local y, m, d = strsplit("-", WP_Database["LASTUPDATE"], 3)
+		local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
+		cc = time(c)
+		cc = cc - tonumber(uptime) * 24 * 60 * 60
+		return expand(data), "更新日期:" .. date("%Y-%m-%d", cc)
 	elseif WP_Database_1[tname] then
 		return expand(WP_Database_1[tname])
 	elseif WP_Database_2[tname] then
@@ -828,11 +835,8 @@ function WclPlayerScore:InitCode()
 				GameTooltip:AddLine(dstr, 255, 209, 0)
 			end
 
-			local data = load_data(WP_MouseoverName)
-			local dstr, uptime
-			if data then
-				data, uptime = strsplit("|", data, 2)
-			end
+			local data, uptime = load_data(WP_MouseoverName)
+
 			dstr = cut_str(data)
 			if dstr then
 				GameTooltip:AddLine(dstr, 255, 209, 0)
@@ -841,14 +845,9 @@ function WclPlayerScore:InitCode()
 			if dstrr then
 				GameTooltip:AddLine(dstrr, 255, 209, 0)
 			end
-			if uptime and wclps_settings.updatedate == true then
-				local y, m, d = strsplit("-", load_data("LASTUPDATE"), 3)
-				local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
-				cc = time(c)
-				cc = cc - tonumber(uptime) * 24 * 60 * 60
 
-				-- print(date("%Y-%m-%d", cc))
-				GameTooltip:AddLine("更新日期:" .. date("%Y-%m-%d", cc), 255, 209, 0)
+			if uptime then
+				GameTooltip:AddLine(uptime, 255, 209, 0)
 			end
 			GameTooltip:Show()
 		end
@@ -890,16 +889,7 @@ partyraid_eventframe:SetScript("OnEvent",
 				local dstrstop3 = load_stop(WP_SystemName .. "_3")
 				if dstrstop3 == nil then dstrstop3 = "" end
 
-				local data = load_data(WP_MouseoverName)
-				local uptime = cut_lastdate(data)
-
-				if uptime ~=nil and uptime ~="" then
-					local y, m, d = strsplit("-", load_data("LASTUPDATE"), 3)
-					local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
-					cc = time(c)
-					cc = cc - tonumber(uptime) * 24 * 60 * 60
-					dstrupdate = "更新日期:" .. date("%Y-%m-%d", cc)
-				end
+				local data, dstrupdate = load_data(WP_SystemName)
 				local dstr = cut_str(data)
 				if dstr == nil then dstr = "" else if dstr then dstr = strsub(dstr, 11) end end
 				local dstrs2 = cut_strr(data)
