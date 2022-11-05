@@ -152,7 +152,7 @@ local function load_stop(tname)
 		return nil
 	end
 	if STOP_Database[tname] then
-		return STOP_Database[tname]
+		return '本服全明星第' .. STOP_Database[tname]
 	else
 		return nil
 	end
@@ -164,7 +164,19 @@ local function load_ctop(tname)
 	end
 	tname = tname .. "_" .. GetRealmName()
 	if CTOP_Database[tname] then
-		return CTOP_Database[tname]
+		return '国服全明星第' .. CTOP_Database[tname]
+	else
+		return nil
+	end
+end
+
+local function load_top(tname)
+	if type(TOP_Database) ~= "table" then
+		return nil
+	end
+	tname = tname .. "_" .. GetRealmName()
+	if TOP_Database[tname] then
+		return '世界全明星第' .. TOP_Database[tname]
 	else
 		return nil
 	end
