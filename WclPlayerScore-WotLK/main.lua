@@ -244,6 +244,10 @@ function WclPlayerScore:InitCode()
 					GameTooltip:AddLine(dstr, 255, 209, 0)
 				end
 			end
+			dstr = load_top(WP_MouseoverName)
+			if dstr then
+				GameTooltip:AddLine(dstr, 255, 209, 0)
+			end
 			dstr = load_ctop(WP_MouseoverName)
 			if dstr then
 				GameTooltip:AddLine(dstr, 255, 209, 0)
