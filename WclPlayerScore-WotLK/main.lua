@@ -250,7 +250,7 @@ function WclPlayerScore:InitCode()
 			end
 			dstr = load_stop(WP_MouseoverName)
 			if dstr then
-				GameTooltip:AddLine("本服" .. dstr, 255, 209, 0)
+				GameTooltip:AddLine(dstr, 255, 209, 0)
 			end
 			local data,ldate = load_data(WP_MouseoverName)
 			dstr = cut_str(data)
