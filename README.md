@@ -6,3 +6,4 @@ WCL国服数据，仅支持巫妖王版本
 插件早晨8:00自动打包提交Curseforge、WowInterface（最近因为bash没正确执行，因此发布时间不稳定
 
 通报WA  https://wago.io/ahIxep7wC
+团队综合WCL评分助手 https://wago.io/qJP-BRNrm
