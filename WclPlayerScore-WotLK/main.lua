@@ -119,13 +119,7 @@ local function load_data(tname)
 		local c = { year = tonumber(y), month = tonumber(m), day = tonumber(d), hour = 00, min = 00, sec = 00 }
 		cc = time(c)
 		cc = cc - tonumber(uptime) * 24 * 60 * 60
-		return expand(data), "更新日期:" .. date("%Y-%m-%d", cc)	
-	elseif WP_Database_1[tname] then
-		return expand(WP_Database_1[tname])
-	elseif WP_Database_2[tname] then
-		return expand(WP_Database_2[tname])
-	elseif WP_Database_3[tname] then
-		return expand(WP_Database_3[tname])
+		return expand(data), "更新日期:" .. date("%Y-%m-%d", cc)
 	end
 	return nil
 end
@@ -152,7 +146,8 @@ local function load_stop(tname)
 		return nil
 	end
 	if STOP_Database[tname] then
-		return '本服全明星第' .. STOP_Database[tname]
+		return {strsplit(',' , STOP_Database[tname])}
+		-- return '本服全明星第' .. STOP_Database[tname]
 	else
 		return nil
 	end
@@ -162,9 +157,10 @@ local function load_ctop(tname)
 	if type(CTOP_Database) ~= "table" then
 		return nil
 	end
-	tname = tname .. "_" .. GetRealmName()
-	if CTOP_Database[tname] then
-		return '国服全明星第' .. CTOP_Database[tname]
+	name = tname .. "_" .. GetRealmName()
+	if CTOP_Database[name] then
+		return {strsplit(',' , CTOP_Database[name])}
+		-- return '国服全明星第' .. CTOP_Database[tname]
 	else
 		return nil
 	end
@@ -174,9 +170,11 @@ local function load_top(tname)
 	if type(TOP_Database) ~= "table" then
 		return nil
 	end
-	tname = tname .. "_" .. GetRealmName()
-	if TOP_Database[tname] then
-		return '世界全明星第' .. TOP_Database[tname]
+	local name = tname .. "_" .. GetRealmName()
+
+	if TOP_Database[name] then
+		return {strsplit(',' , TOP_Database[name])}
+		-- return '世界全明星第' .. TOP_Database[tname]
 	else
 		return nil
 	end
@@ -246,15 +244,20 @@ function WclPlayerScore:InitCode()
 			end
 			dstr = load_top(WP_MouseoverName)
 			if dstr then
-				GameTooltip:AddLine(dstr, 255, 209, 0)
-			end
+				for i, title in ipairs(dstr) do
+					GameTooltip:AddLine('世界全明星第' .. title, 255, 209, 0)
+				end			end
 			dstr = load_ctop(WP_MouseoverName)
 			if dstr then
-				GameTooltip:AddLine(dstr, 255, 209, 0)
+				for i, title in ipairs(dstr) do
+					GameTooltip:AddLine('国服全明星第' .. title, 255, 209, 0)
+				end
 			end
 			dstr = load_stop(WP_MouseoverName)
 			if dstr then
-				GameTooltip:AddLine(dstr, 255, 209, 0)
+				for i, title in ipairs(dstr) do
+					GameTooltip:AddLine('本服全明星第' .. title, 255, 209, 0)
+				end
 			end
 			local data,ldate = load_data(WP_MouseoverName)
 			dstr = cut_str(data)
@@ -276,9 +279,6 @@ Addon_EventFrame:SetScript("OnEvent",
 	function(self, event, addon)
 		if addon == "WclPlayerScore-WotLK" then
 			WP_Database = WP_Database or {}
-			WP_Database_1 = WP_Database_1 or {}
-			WP_Database_2 = WP_Database_2 or {}
-			WP_Database_3 = WP_Database_3 or {}
 			WclPlayerScore:ScheduleTimer("InitCode", 1)
 			loadScoreDB()
 		end
