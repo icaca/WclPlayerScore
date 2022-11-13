@@ -245,18 +245,33 @@ function WclPlayerScore:InitCode()
 			dstr = load_top(WP_MouseoverName)
 			if dstr then
 				for i, title in ipairs(dstr) do
-					GameTooltip:AddLine('世界全明星第' .. title, 255, 209, 0)
+					if string.find(title,"^%d") ~=nil then
+						title = '世界全明星第' .. title
+					else
+						title = expand(title)
+					end
+					GameTooltip:AddLine(title, 255, 209, 0)
 				end			end
 			dstr = load_ctop(WP_MouseoverName)
 			if dstr then
 				for i, title in ipairs(dstr) do
-					GameTooltip:AddLine('国服全明星第' .. title, 255, 209, 0)
+					if string.find(title,"^%d") ~=nil then
+						title = '国服全明星第' .. title
+					else
+						title = expand(title)
+					end
+					GameTooltip:AddLine(title, 255, 209, 0)					
 				end
 			end
 			dstr = load_stop(WP_MouseoverName)
 			if dstr then
 				for i, title in ipairs(dstr) do
-					GameTooltip:AddLine('本服全明星第' .. title, 255, 209, 0)
+					if string.find(title,"^%d") ~=nil then
+						title = '本服全明星第' .. title
+					else
+						title = expand(title)
+					end
+					GameTooltip:AddLine(title, 255, 209, 0)					
 				end
 			end
 			local data,ldate = load_data(WP_MouseoverName)
