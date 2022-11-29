@@ -1,5 +1,5 @@
 ## Interface: 30400
-## Title: WclPS-WotLK|cFF3782D1[小服及外服数据包]|r
+## Title: WclPS-WotLK|cFF3782D1[小服数据包]|r
 ## Author: 插件作者：zwj@oldgun ，TBC数据提取：SaberNio，WotLK数据提取：caca，鸣谢：deepapa@NGA
 ## LoadOnDemand: 1
 ## Dependencies: WclPlayerScore-WotLK
