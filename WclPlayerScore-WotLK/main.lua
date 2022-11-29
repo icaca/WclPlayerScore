@@ -162,6 +162,19 @@ local function load_stop(tname)
 	end
 end
 
+local function load_ttop(tname)
+	if type(TTOP_Database) ~= "table" then
+		return nil
+	end
+	name = tname .. "_" .. GetRealmName()
+	if TTOP_Database[name] then
+		return { strsplit(',', TTOP_Database[name]) }
+		-- return '国服全明星第' .. TTOP_Database[tname]
+	else
+		return nil
+	end
+end
+
 local function load_ctop(tname)
 	if type(CTOP_Database) ~= "table" then
 		return nil
@@ -272,6 +285,17 @@ function WclPlayerScore:InitCode()
 					GameTooltip:AddLine(title, 255, 209, 0)
 				end
 			end
+			dstr = load_ttop(WP_MouseoverName)
+			if dstr then
+				for i, title in ipairs(dstr) do
+					if string.find(title, "^%d") ~= nil then
+						title = '台服全明星第' .. title
+					else
+						title = expand(title)
+					end
+					GameTooltip:AddLine(title, 255, 209, 0)
+				end
+			end			
 			dstr = load_stop(WP_MouseoverName)
 			if dstr then
 				for i, title in ipairs(dstr) do
