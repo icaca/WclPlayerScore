@@ -5,6 +5,6 @@ STOP_Database = {
 end
 if(GetRealmName() == "魚人") then
 WP_Database = {
-["LASTUPDATE"]="2022-12-05"
+["LASTUPDATE"]="2022-12-06"
 }
 end
