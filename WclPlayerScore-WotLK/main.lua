@@ -22,7 +22,7 @@ local function loadScoreDB()
 		"维克尼拉斯", "曼多基尔", "奎尔塞拉", "范沃森" }
 	local ScoreDB4 = { "范克瑞斯", "雷霆之击", "碧空之歌", "维希度斯", "法尔班克斯", "雷德", "卓越",
 		"巴罗夫", "无尽风暴", "巨龙追猎者", "寒冰之王", "秩序之源" }
-	local ScoreDB6 = { "伊弗斯", "瑪拉頓", "阿拉希盆地", "魚人" }
+	local ScoreDB6 = { "伊弗斯", "瑪拉頓", "阿拉希盆地", "魚人", "逐風者" }
 
 	for k, v in ipairs(ScoreDB1) do
 		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB1")
