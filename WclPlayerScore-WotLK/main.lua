@@ -56,8 +56,8 @@ end
 local function expand(name)
 
 	local switch = {
-		["O"] = function()
-			return "OS"
+		["V"] = function()
+			return "VOA"
 		end,
 		["X"] = function()
 			return "NAX"
