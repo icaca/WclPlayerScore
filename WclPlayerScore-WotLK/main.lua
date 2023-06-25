@@ -65,6 +65,9 @@ local function expand(name)
 		["D"] = function()
 			return "ULD"
 		end,
+		["O"] = function()
+			return "Onyxia"
+		end,
 		["T"] = function()
 			return "TOC"
 		end,
