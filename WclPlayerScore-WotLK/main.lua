@@ -64,7 +64,13 @@ local function expand(name)
 		end,
 		["D"] = function()
 			return "ULD"
-		end,				
+		end,
+		["T"] = function()
+			return "TOC"
+		end,
+		["I"] = function()
+			return "ICC"
+		end,
 		["A"] = function()
 			return "|cFFE5CC80"
 		end,
