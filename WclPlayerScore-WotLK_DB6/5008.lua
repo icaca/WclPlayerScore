@@ -264,6 +264,7 @@ STOP_Database = {
 ["Vealocity"]="11武器战",
 ["Elshoe"]="11狂暴战",
 ["Chadmaleorc"]="12冰DK",
+["Gumsdead"]="2血DK,12符文DK,48冰DK",
 ["Hat"]="12邪DK",
 ["Blòóm"]="12平衡德",
 ["Maahess"]="9典狱长德,12猫德",
@@ -1035,7 +1036,6 @@ STOP_Database = {
 ["Billywubwub"]="47恢复萨",
 ["Garbagee"]="39恶魔术,47痛苦术",
 ["Brukica"]="47狂暴战",
-["Gumsdead"]="2血DK,12符文DK,48冰DK",
 ["Ðeadlydame"]="48邪DK",
 ["Bovyday"]="48平衡德",
 ["Erusial"]="48射击猎",
@@ -1516,5 +1516,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2023-08-04"
+["LASTUPDATE"]="2023-08-05"
 }
