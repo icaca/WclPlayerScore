@@ -939,6 +939,7 @@ STOP_Database = {
 ["Hammzor"]="41狂暴战",
 ["Crickle"]="42冰DK",
 ["Deatheart"]="42邪DK",
+["Scratchybalz"]="42平衡德,58恢复德",
 ["Kyriane"]="42恢复德",
 ["Feronio"]="42生存猎",
 ["Nìghtmare"]="42奥法",
@@ -1182,7 +1183,6 @@ STOP_Database = {
 ["Broameer"]="58冰DK",
 ["Katarynax"]="58邪DK",
 ["Shadowspath"]="58平衡德",
-["Scratchybalz"]="42平衡德,58恢复德",
 ["Brodan"]="58生存猎",
 ["Dinkléburg"]="58奥法",
 ["Cleantaco"]="58奶骑",
@@ -1452,6 +1452,6 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Deadstoise"]="CD:(火焰)82529/13.0%CT:(火焰)57859/18.5%|2",
-["LASTUPDATE"]="2023-08-19"
+["Deadstoise"]="CD:(火焰)82529/13.0%CT:(火焰)57859/18.5%|3",
+["LASTUPDATE"]="2023-08-20"
 }
