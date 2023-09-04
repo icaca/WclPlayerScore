@@ -728,7 +728,6 @@ STOP_Database = {
 ["Losêctrl"]="27恢复萨",
 ["Boser"]="27痛苦术",
 ["Insaniacz"]="27恶魔术",
-["Scunx"]="27毁灭术,57痛苦术",
 ["Xedoz"]="15狂暴战,27武器战",
 ["Madvisions"]="27狂暴战,81冰DK",
 ["Jackosqq"]="28冰DK,44符文DK",
@@ -1494,6 +1493,7 @@ STOP_Database = {
 ["Lavabeam"]="57元素萨",
 ["Miczu"]="57增强萨",
 ["Dyskletiker"]="57恢复萨",
+["Scunx"]="27毁灭术,57痛苦术",
 ["Murí"]="57恶魔术",
 ["Calizox"]="57武器战",
 ["Hulcksmash"]="57狂暴战",
@@ -2464,5 +2464,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2023-09-04"
+["LASTUPDATE"]="2023-09-05"
 }
