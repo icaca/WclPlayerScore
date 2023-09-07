@@ -6,5 +6,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2023-09-07"
+["LASTUPDATE"]="2023-09-08"
 }
