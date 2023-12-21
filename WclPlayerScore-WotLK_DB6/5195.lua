@@ -3,7 +3,6 @@ return
 end
 
 STOP_Database = {
-["Saithis"]="1巫妖DK,3邪DK",
 ["Nureldin"]="1邪DK",
 ["Earthclaw"]="1猫德,2恢复德",
 ["Zonery"]="1恢复德",
@@ -18,7 +17,6 @@ STOP_Database = {
 ["Deadlysnake"]="1奇袭贼",
 ["Shamanixus"]="1恢复萨,1元素萨",
 ["Thacy"]="1增强萨",
-["Elenorda"]="1痛苦术,2恶魔术",
 ["Highsup"]="1恶魔术",
 ["Syrilla"]="1毁灭术",
 ["Qlaw"]="1武器战",
@@ -31,9 +29,11 @@ STOP_Database = {
 ["Iyvraine"]="1战斗贼,2奇袭贼",
 ["Fie"]="2战斗贼",
 ["Azure"]="2恢复萨",
+["Elenorda"]="1痛苦术,2恶魔术",
 ["Odixix"]="2武器战",
 ["Hanoi"]="1决斗战,2狂暴战",
 ["Evandre"]="1防战,2决斗战",
+["Saithis"]="1巫妖DK,3邪DK",
 ["Skadoodles"]="3恢复德",
 ["Scorpi"]="3火法",
 ["Alienpaladin"]="3惩戒骑",
