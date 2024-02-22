@@ -6,5 +6,6 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2024-02-22"
+["Cailimah"]="UI:(野性)16054/49.0%ET:(野性)5368/84.8%|1",
+["LASTUPDATE"]="2024-02-23"
 }
