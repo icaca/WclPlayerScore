@@ -6,7 +6,7 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Siopia"]="CI:(生存)19898/7.6%|3",
-["Lorefather"]="CI:(奥术)1558/10.3%|3",
-["LASTUPDATE"]="2024-02-23"
+["Siopia"]="CI:(生存)19898/7.6%|4",
+["Lorefather"]="CI:(奥术)1558/10.3%|4",
+["LASTUPDATE"]="2024-02-24"
 }

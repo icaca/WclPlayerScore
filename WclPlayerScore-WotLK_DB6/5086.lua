@@ -6,6 +6,6 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Deadstoise"]="Er:(火焰)2955/86.8%EI:(火焰)13960/81.2%ET:(奥术)3633/80.3%|1",
-["LASTUPDATE"]="2024-02-23"
+["Deadstoise"]="Er:(火焰)3037/86.6%EI:(火焰)15610/80.8%ET:(奥术)3633/80.3%|1",
+["LASTUPDATE"]="2024-02-24"
 }
