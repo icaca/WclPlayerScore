@@ -3,8 +3,32 @@ return
 end
 
 STOP_Database = {
+["Eshqawfirst"]="1血DK,1符文DK,1血DKDPS",
+["Borman"]="1冰DK",
+["Redanskaya"]="1平衡德",
+["Eléu"]="1猫德",
+["Terebonka"]="1生存猎",
+["Anfa"]="1火法",
+["Primeouter"]="1奶骑",
+["Frezerr"]="1防骑,1审判骑",
+["Tenelom"]="1惩戒骑",
+["Whités"]="1戒律牧",
+["Afkunicorn"]="1暗牧",
+["Phantomblade"]="1战斗贼",
+["Hinkalya"]="1元素萨,2恢复萨",
+["Drudder"]="1恢复萨",
+["Nintendopro"]="1痛苦术",
+["Tôxin"]="1恶魔术",
+["Advokat"]="1狂暴战",
+["Airmj"]="2生存猎",
+["Emidiuse"]="2奶骑",
+["Chronicaa"]="2防骑,3惩戒骑",
+["Arutor"]="2惩戒骑",
+["Fý"]="2暗牧",
+["Djon"]="2战斗贼",
+["Faq"]="2狂暴战",
 }
 
 WP_Database = {
-["LASTUPDATE"]="2024-03-28"
+["LASTUPDATE"]="2024-03-29"
 }
