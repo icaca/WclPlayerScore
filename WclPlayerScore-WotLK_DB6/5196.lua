@@ -6,6 +6,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Nckd"]="RI:(恢复)16693/65.9%LT:(恢复)1013/97.1%|14",
-["LASTUPDATE"]="2024-04-02"
+["LASTUPDATE"]="2024-04-03"
 }
