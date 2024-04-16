@@ -1,4 +1,4 @@
-if(GetRealmName() ~= "서리한") then
+if(GetRealmName() ~= "逐風者") then
 return
 end
 
