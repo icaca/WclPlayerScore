@@ -14,15 +14,12 @@ SlashCmdList["WP_Commands"] = function(msg)
 end
 
 local function loadScoreDB()
-	local ScoreDB1 = { "哈霍兰", "奥罗", "祈福", "霜语", "席瓦莱恩", "碧玉矿洞", "怒炉", "寒脊山小径",
-		"诺格弗格", "加丁", "毁灭之刃", "光芒" }
-	local ScoreDB2 = { "莫格莱尼", "龙之召唤", "奥金斧", "灰烬使者", "震地者", "埃提耶什", "维克洛尔",
-		"萨弗拉斯", "德姆塞卡尔", "火锤", "水晶之牙", "辛迪加" }
-	local ScoreDB3 = { "帕奇维克", "布鲁", "狮心", "匕首岭", "比格沃斯", "审判", "比斯巨兽", "觅心者",
-		"维克尼拉斯", "曼多基尔", "奎尔塞拉", "范沃森" }
-	local ScoreDB4 = { "范克瑞斯", "雷霆之击", "碧空之歌", "维希度斯", "法尔班克斯", "雷德", "卓越",
-		"巴罗夫", "无尽风暴", "巨龙追猎者", "寒冰之王", "秩序之源" }
-	local ScoreDB6 = { "Atiesh","Arugal","Bloodsail Buccaneers","Faerlina","Grobbulus","Mankrik","Myzrael","Pagle","Remulos","Whitemane","Golemagg","Hydraxian Waterlords","Mirage Raceway","Pyrewood Village","Auberdine","Sulfuron","Everlook","Хроми","Пламегор","Gehennas","Firemaw","Mograine","Nethergarde Keep","Old Blanchy","Westfall","로크홀라","소금 평원","伊弗斯","瑪拉頓","Sulfuras","Ashkandi","Yojamba","Amnennar","Benediction","Azuresong","Windseeker","Ashbringer","Dreadmist","Lakeshire","Transcendence","Earthshaker","Earthfury","Venoxis","얼음피","라그나로스","Razorfen","Patchwerk","Mandokir","서리한","Skyfury","Maladath","Thekal","Giantstalker","Eranikus","Jin'do","阿拉希盆地","魚人","逐風者","古雷曼格","札里克","烏蘇雷" }
+	local ScoreDB1 = { "" }
+	local ScoreDB2 = { "" }
+	local ScoreDB3 = { "烏蘇雷","阿拉希盆地","瑪拉頓","伊弗斯","魚人","逐風者","古雷曼格","札里克" }
+	local ScoreDB4 = { "Faerlina","Eranikus","Arugal","Mankrik","Pagle","Bloodsail Buccaneers","Myzrael","Grobbulus","Maladath","Skyfury","Remulos","Whitemane","Earthfury","Windseeker","Azuresong","Benediction","Yojamba","Ashkandi","Sulfuras","Atiesh","Westfall","Old Blanchy" }
+	local ScoreDB5 = { "Hydraxian Waterlords","Golemagg","Auberdine","Sulfuron","Mirage Raceway","Nethergarde Keep","Mograine","Firemaw","Gehennas","Pyrewood Village","Хроми","Everlook","Пламегор","Thekal","Dreadmist","Lakeshire","Transcendence","Earthshaker","Razorfen","Venoxis","Patchwerk","Mandokir","Ashbringer","Giantstalker","Amnennar","Jin'do" }
+	local ScoreDB6 = { "라그나로스","얼음피","소금 평원","서리한","로크홀라" }
 
 	for k, v in ipairs(ScoreDB1) do
 		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB1")
@@ -40,16 +37,13 @@ local function loadScoreDB()
 		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB4")
 		end
 	end
+	for k, v in ipairs(ScoreDB5) do
+		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB5")
+		end
+	end
 	for k, v in ipairs(ScoreDB6) do
 		if v == GetRealmName() then LoadAddOn("WclPlayerScore-WotLK_DB6")
 		end
-	end
-	if not IsAddOnLoaded("WclPlayerScore-WotLK_DB1") and
-		not IsAddOnLoaded("WclPlayerScore-WotLK_DB2") and
-		not IsAddOnLoaded("WclPlayerScore-WotLK_DB3") and
-		not IsAddOnLoaded("WclPlayerScore-WotLK_DB4") and
-		not IsAddOnLoaded("WclPlayerScore-WotLK_DB6") then
-		LoadAddOn("WclPlayerScore-WotLK_DB5")
 	end
 end
 
