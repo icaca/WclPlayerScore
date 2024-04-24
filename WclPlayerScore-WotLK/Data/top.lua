@@ -3694,7 +3694,7 @@ TOP_Database = {
 
 }
 
-None_Database = {
+AETOP_Database = {
 ["Feoce_Gehennas"]="1血DK",
 ["Личмладший_Пламегор"]="1血DKDPS",
 ["Km_Gehennas"]="1冰DK",
@@ -7337,7 +7337,7 @@ None_Database = {
 
 }
 
-None_Database = {
+ASITOP_Database = {
 ["Ravenknight_로크홀라"]="1血DK",
 ["Muxxang_로크홀라"]="1血DKDPS",
 ["멍멍꿀꿀멍멍꿀꿀_로크홀라"]="1冰DK",
