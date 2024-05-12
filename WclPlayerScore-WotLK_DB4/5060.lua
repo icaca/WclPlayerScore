@@ -6,6 +6,6 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Zzaj"]="CI:(战斗)173.25/7.4%|7",
-["LASTUPDATE"]="2024-05-12"
+["Zzaj"]="CI:(战斗)173.25/7.4%|8",
+["LASTUPDATE"]="2024-05-13"
 }
