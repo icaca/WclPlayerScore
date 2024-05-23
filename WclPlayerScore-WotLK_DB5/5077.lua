@@ -3,14 +3,14 @@ return
 end
 
 STOP_Database = {
-["Eshqawfirst"]="1血DK,1符文DK,1血DKDPS",
 ["Borman"]="1冰DK",
+["Eshqawfirst"]="1符文DK,1血DKDPS,1血DK",
 ["Redanskaya"]="1平衡",
 ["Eléu"]="1野性德",
 ["Terebonka"]="1生存猎",
 ["Anfa"]="1火法",
 ["Primeouter"]="1奶骑",
-["Frezerr"]="1防骑,1审判骑",
+["Frezerr"]="1审判骑,1防骑",
 ["Tenelom"]="1惩戒骑",
 ["Whités"]="1戒牧",
 ["Afkunicorn"]="1暗牧",
@@ -30,5 +30,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2024-05-23"
+["LASTUPDATE"]="2024-05-24"
 }

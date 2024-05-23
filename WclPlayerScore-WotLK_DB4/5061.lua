@@ -1089,7 +1089,7 @@ STOP_Database = {
 ["Lovetoheal"]="40戒牧",
 ["Elyneda"]="40奇袭贼",
 ["Donttwo"]="40战斗贼",
-["Jawbreakers"]="40元素萨,57增强萨,91冰DK",
+["Jawbréakers"]="40元素萨,57增强萨,91冰DK",
 ["Jimboonie"]="40增强萨",
 ["Juggertism"]="40恢复萨",
 ["Darkseïd"]="40痛苦术",
@@ -2098,5 +2098,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2024-05-23"
+["LASTUPDATE"]="2024-05-24"
 }

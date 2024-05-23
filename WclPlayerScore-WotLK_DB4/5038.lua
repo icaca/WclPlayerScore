@@ -1139,7 +1139,7 @@ STOP_Database = {
 ["Kheul"]="42奥法",
 ["Biigdoinks"]="42火法",
 ["Turtleyoshie"]="42奶骑",
-["Paladinielle"]="42审判骑,42防骑",
+["Paladinielle"]="42防骑,42审判骑",
 ["Snowchad"]="42惩戒骑",
 ["Tideäs"]="42戒牧",
 ["Jorolux"]="42神牧",
@@ -2223,7 +2223,7 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Angmâr"]="UI:(狂怒)748.95/70.2%|3",
-["Gardengnomed"]="CI:(火焰)676.25/66.0%UT:(火焰)244.36/53.3%|3",
-["LASTUPDATE"]="2024-05-23"
+["Angmâr"]="UI:(狂怒)748.95/70.2%|1",
+["Gardengnomed"]="CI:(火焰)676.25/66.0%UT:(火焰)244.36/53.3%|1",
+["LASTUPDATE"]="2024-05-24"
 }

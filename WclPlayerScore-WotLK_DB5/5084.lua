@@ -620,7 +620,7 @@ STOP_Database = {
 ["Nightzze"]="20毁灭术",
 ["Intercity"]="20武器战",
 ["Marriozo"]="20狂战",
-["Waws"]="20角斗战,20防战",
+["Waws"]="20防战,20角斗战",
 ["Plaguemade"]="21血DK,87血DKDPS",
 ["Ryathor"]="21血DKDPS,25冰DK",
 ["Nexx"]="21冰DK",
@@ -2280,7 +2280,7 @@ STOP_Database = {
 }
 
 WP_Database = {
-["Neffaline"]="UI:(生存)421.47/83.8%|3",
-["Venthess"]="UI:(武器)805.56/85.8%|1",
-["LASTUPDATE"]="2024-05-23"
+["Neffaline"]="UI:(生存)404.8/83.4%|1",
+["Venthess"]="UI:(武器)805.56/85.8%|2",
+["LASTUPDATE"]="2024-05-24"
 }

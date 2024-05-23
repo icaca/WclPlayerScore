@@ -74,7 +74,7 @@ STOP_Database = {
 ["Raggedemon"]="2毁灭术,31痛苦术",
 ["Sharusil"]="2武器战",
 ["Blådez"]="2狂战",
-["Gneecappa"]="2防战,2角斗战",
+["Gneecappa"]="2角斗战,2防战",
 ["Nosselia"]="3血DKDPS,84冰DK",
 ["Kriegstag"]="3冰DK,13血DKDPS,65符文DK",
 ["Xylich"]="3巫妖DK,56符文DK",
@@ -1959,5 +1959,5 @@ STOP_Database = {
 }
 
 WP_Database = {
-["LASTUPDATE"]="2024-05-23"
+["LASTUPDATE"]="2024-05-24"
 }
