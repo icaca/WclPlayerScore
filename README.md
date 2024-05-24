@@ -1,5 +1,9 @@
->>>此项目已完成使命<<<
+***此项目已完成使命***
+
 后期请移步 https://github.com/icaca/WclPlayerScore-Cata
+
+
+
 
 因为网站进行了调整，以后没有免费的方式获取数据了。
 
